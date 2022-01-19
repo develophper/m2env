@@ -57,11 +57,11 @@ Vagrant.configure(2) do |config|
     # Enable symlink
     v.customize ['setextradata', :id, 'VBoxInternal2/SharedFoldersEnableSymlinksCreate/var/www/', '1']
     # Uncomment option below to avoid issues with VirtualBox on Windows 10
-    # v.gui=true
+    v.gui=true
   end
 
   # Default options
-  config.vm.synced_folder '.', '/vagrant', disabled: true
+  config.vm.synced_folder '.', '/vagrant', disabled: false
 
   # Bindfs options
   config.bindfs.default_options = {

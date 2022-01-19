@@ -3,6 +3,7 @@
 /.DS_Store
 /ssh
 /www
+/www/*
 /vagrant-ssh
 /config.yaml
 /extra/001-env.sh
